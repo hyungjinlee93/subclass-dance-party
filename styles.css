@@ -10,8 +10,6 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .title, .addDancerButton{
-  display: inline-grid;
-  justify-self: start;
   padding:5px 12px;
   float:right;
 }
@@ -41,4 +39,12 @@ body, a:link, a:visited, a:active{
   width: 20px;
   border-radius:2px;
   position:absolute;
+}
+.fish{
+  content: url('cloud.png');
+  height: 70px;
+  width: 300px;
+  border-radius:2px;
+  position:absolute;
+  opacity:0.5;
 }
