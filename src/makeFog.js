@@ -1,6 +1,6 @@
-var MakeFish = function (top, left, timeBetweenSteps) {
+var MakeFog = function (top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="fish"></span>');
+  this.$node = $('<span class="fog"></span>');
   let randomDir = Math.random() < 0.5 ? -1 : 1;
   if(randomDir < 0){
     this.currentDirection = 'left';
@@ -13,9 +13,9 @@ var MakeFish = function (top, left, timeBetweenSteps) {
   }
 };
 
-MakeFish.prototype = Object.create(MakeDancer.prototype);
-MakeFish.prototype.constructor = MakeFish;
-MakeFish.prototype.step = function () {
+MakeFog.prototype = Object.create(MakeDancer.prototype);
+MakeFog.prototype.constructor = MakeFog;
+MakeFog.prototype.step = function () {
   MakeDancer.prototype.step.call(this);
   if (this.currentDirection === 'right') {
     this.$node.animate({ "left": "+=65px" }, "slow");
@@ -42,7 +42,7 @@ MakeFish.prototype.step = function () {
   }
 };
 
-MakeFish.prototype.setPosition = function (top, left) {
+MakeFog.prototype.setPosition = function (top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
   //

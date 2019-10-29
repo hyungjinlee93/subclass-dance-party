@@ -40,7 +40,7 @@ body, a:link, a:visited, a:active{
   border-radius:2px;
   position:absolute;
 }
-.fish{
+.fog{
   content: url('cloud.png');
   height: 70px;
   width: 300px;
