@@ -48,3 +48,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
   opacity:0.5;
 }
+.fog:hover {
+  height: 210px;
+  width: 900px;
+}

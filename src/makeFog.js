@@ -25,8 +25,6 @@ MakeFog.prototype.step = function () {
       let randomFromTop = Math.random() * 70 * randomNeg;
       this.currentDirection = 'left';
       this.$node.animate({ "top": "+="+randomFromTop+"px" }, "fast");
-      // this.$node.css('-moz-transform', 'scaleX(1)');
-      // this.$node.css('-webkit-transform', 'scaleX(1)');
     }
   } else {
     this.$node.animate({ "left": "-=65px" }, "slow");
@@ -36,16 +34,11 @@ MakeFog.prototype.step = function () {
       let randomFromTop = Math.random() * 70 * randomNeg;
       this.currentDirection = 'right';
       this.$node.animate({ "top": "+="+randomFromTop+"px" }, "fast");
-      // this.$node.css('-moz-transform', 'scaleX(-1)');
-      // this.$node.css('-webkit-transform', 'scaleX(-1)');
     }
   }
 };
 
 MakeFog.prototype.setPosition = function (top, left) {
-  // Use css top and left properties to position our <span> tag
-  // where it belongs on the page. See http://api.jquery.com/css/
-  //
   var styleSettings = {
     top: top,
     left: left
