@@ -28,3 +28,11 @@ MakeDancer.prototype.setPosition = function (top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+var LineUp = function () {
+  this.lineUp();
+}
+
+LineUp.prototype.lineUp = function () {
+  $('span').css({top: 100});
+}
