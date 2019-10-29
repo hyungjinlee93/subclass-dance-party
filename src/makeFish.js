@@ -31,7 +31,7 @@ MakeFish.prototype.step = function () {
   } else {
     this.$node.animate({ "left": "-=65px" }, "slow");
     this.currentPosition -= 65;
-    if (this.currentPosition < -65) {
+    if (this.currentPosition < -300) {
       let randomNeg = Math.random() < 0.5 ? -1 : 1;
       let randomFromTop = Math.random() * 70 * randomNeg;
       this.currentDirection = 'right';
